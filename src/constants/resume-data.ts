@@ -1,0 +1,171 @@
+export const bio = {
+  name: "Shubham Khatik",
+  email: "shubhamkhatik.dev@gmail.com",
+  roles: [
+    "Software Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "MERN Stack Developer",
+    "JavaScript Developer",
+    "GEN AI Developer",
+  ],
+  description:
+    "Frontend Developer with 4+ years of React.js and Next.js expertise. Delivered scalable web applications with 30% performance improvements and enhanced user engagement. Proficient in JavaScript (ES6+), TypeScript, Redux Toolkit, and modern frontend technologies. Strong MERN stack foundation with experience in responsive design, API integration, and Agile development practices.",
+  resumeUrl:
+    "https://drive.google.com/file/d/1eKOWTp5quUohGGLYHTvCIU8ATGslBPP0/view?usp=sharing",
+  github: "https://github.com/shubhamkhatik",
+  linkedin: "https://www.linkedin.com/in/shubhamkhatik/",
+  x: "https://twitter.com/shubham_ktk",
+  devto: "https://dev.to/shubhamkhatik",
+};
+
+export const experiences = [
+  {
+    id: 4,
+    company: "PreDrag System LLP",
+    role: "Frontend Developer",
+    date: "JAN 2023 – FEB 2026",
+    type: "Full-time" as const,
+    responsibilities: [
+      "Architected and developed scalable React.js & Next.js web applications serving 10,000+ users",
+      "Implemented Redux Toolkit for state management, reducing prop-drilling by 60%",
+      "Built RESTful API integrations with Node.js/Express.js and MongoDB backend",
+      "Containerized applications with Docker for consistent deployment across environments",
+      "Optimized Core Web Vitals achieving 30% improvement in page load performance",
+      "Led code reviews and mentored junior developers on React best practices",
+    ],
+    skills: [
+      "React.js",
+      "Next.js",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Docker",
+      "Tailwind CSS",
+      "JWT",
+    ],
+  },
+  {
+    id: 3,
+    company: "Qloron Technologies Pvt Ltd",
+    role: "React.js Developer",
+    date: "FEB 2022 – SEP 2022",
+    type: "Full-time" as const,
+    responsibilities: [
+      "Developed responsive React.js applications with complex form handling using Formik",
+      "Managed global state with Redux Toolkit for multi-page workflows",
+      "Collaborated with cross-functional teams in Agile/Scrum sprints",
+      "Reduced component render cycles by 25% through memoization strategies",
+    ],
+    skills: [
+      "React.js",
+      "Redux",
+      "Redux Toolkit",
+      "Formik",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    id: 2,
+    company: "Qloron Technologies Pvt Ltd",
+    role: "React.js Developer Intern",
+    date: "SEP 2021 – JAN 2022",
+    type: "Internship" as const,
+    responsibilities: [
+      "Built interactive UI components with React.js and Material UI",
+      "Implemented responsive layouts following mobile-first design principles",
+      "Participated in sprint planning and daily standups",
+    ],
+    skills: ["React.js", "Material UI", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    id: 1,
+    company: "Clougile Technologies Pvt Ltd",
+    role: "Software Developer Intern",
+    date: "Nov 2019 – Mar 2020",
+    type: "Internship" as const,
+    responsibilities: [
+      "Developed cross-platform mobile applications using React Native",
+      "Built responsive web interfaces with HTML, CSS, and JavaScript",
+      "Gained foundational experience in modern JavaScript frameworks",
+    ],
+    skills: ["React Native", "JavaScript", "HTML", "CSS"],
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    title: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "Python", "HTML5", "CSS3"],
+  },
+  {
+    id: 2,
+    title: "Frontend",
+    items: [
+      "React.js",
+      "Next.js",
+      "Redux Toolkit",
+      "Recoil",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive Design",
+      "React Testing Library",
+    ],
+  },
+  {
+    id: 3,
+    title: "Backend",
+    items: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "PostgreSQL",
+      "Prisma",
+      "GraphQL",
+      "REST APIs",
+      "WebSockets",
+      "Zod",
+      "Jest",
+    ],
+  },
+  {
+    id: 4,
+    title: "DevOps & Tools",
+    items: [
+      "AWS",
+      "Docker",
+      "Nginx",
+      "PM2",
+      "Git & GitHub",
+      "CI/CD",
+      "Vercel",
+      "Postman",
+      "Turborepo",
+    ],
+  },
+  {
+    id: 5,
+    title: "Practices",
+    items: [
+      "Agile/Scrum",
+      "TDD",
+      "Code Reviews",
+      "Performance Optimization",
+      "System Design",
+      "Security Best Practices",
+    ],
+  },
+];
+
+export const stats = [
+  { label: "Years Experience", value: "4+" },
+  { label: "Projects Built", value: "10+" },
+  { label: "Companies", value: "3" },
+  { label: "Blog Articles", value: "8+" },
+];
