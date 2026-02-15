@@ -9,8 +9,7 @@ export const bio = {
     "JavaScript Developer",
     "GEN AI Developer",
   ],
-  description:
-    "Frontend Developer with 4+ years of React.js and Next.js expertise. Delivered scalable web applications with 30% performance improvements and enhanced user engagement. Proficient in JavaScript (ES6+), TypeScript, Redux Toolkit, and modern frontend technologies. Strong MERN stack foundation with experience in responsive design, API integration, and Agile development practices.",
+  description:`Frontend-focused Product Engineer with 4 years of experience specializing in high-performance React and Next.js ecosystems. Expert in bridging the gap between complex UI/UX and scalable backends using Node.js and TypeScript. Beyond traditional MERN stack development, I am actively architecting AI-native workflows, integrating LLMs via the Vercel AI SDK and LangChain to build intelligent, context-aware web applications.`,
   resumeUrl:
     "https://drive.google.com/file/d/1eKOWTp5quUohGGLYHTvCIU8ATGslBPP0/view?usp=sharing",
   github: "https://github.com/shubhamkhatik",
@@ -166,6 +165,6 @@ export const skills = [
 export const stats = [
   { label: "Years Experience", value: "4+" },
   { label: "Projects Built", value: "10+" },
-  { label: "Companies", value: "3" },
-  { label: "Blog Articles", value: "8+" },
+  { label: "Technical Architecture", value: "MERN + AI" },
+  { label: "Focus", value: "AI + System Design" },
 ];

@@ -9,11 +9,13 @@ function AnimatedCounter({ value, label }: { value: string; label: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
   const [count, setCount] = useState(0);
-  const numericValue = parseInt(value.replace(/\D/g, ""));
-  const suffix = value.replace(/\d/g, "");
+
+  const isNumeric = /\d/.test(value);
+  const numericValue = isNumeric ? parseInt(value.replace(/\D/g, "")) : 0;
+  const suffix = isNumeric ? value.replace(/\d/g, "") : "";
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !isNumeric) return;
     let start = 0;
     const end = numericValue;
     const duration = 1500;
@@ -30,13 +32,19 @@ function AnimatedCounter({ value, label }: { value: string; label: string }) {
     }, 16);
 
     return () => clearInterval(timer);
-  }, [isInView, numericValue]);
+  }, [isInView, isNumeric, numericValue]);
 
   return (
     <div ref={ref} className="text-center">
       <div className="text-3xl md:text-4xl font-bold gradient-text mb-1" style={{ fontFamily: "var(--font-outfit)" }}>
-        {count}
-        {suffix}
+        {isNumeric ? (
+          <>
+            {count}
+            {suffix}
+          </>
+        ) : (
+          value
+        )}
       </div>
       <div className="text-foreground-muted text-sm">{label}</div>
     </div>
