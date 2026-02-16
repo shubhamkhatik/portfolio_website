@@ -1,10 +1,9 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter, Heart, ArrowUpRight } from "lucide-react";
 import { bio } from "@/constants/resume-data";
 
 const socialLinks = [
   { icon: Github, href: bio.github, label: "GitHub" },
   { icon: Linkedin, href: bio.linkedin, label: "LinkedIn" },
-  { icon: Twitter, href: bio.x, label: "X / Twitter" },
 ];
 
 export function Footer() {

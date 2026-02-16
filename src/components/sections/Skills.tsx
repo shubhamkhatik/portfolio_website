@@ -23,8 +23,8 @@ export function Skills() {
   return (
     <SectionWrapper
       id="skills"
-      title="Technical Skills"
-      subtitle="Technologies and tools I work with daily"
+      title="Core Technical Stack"
+      subtitle="Technologies and tools I work with"
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {skills.map((category, categoryIndex) => {

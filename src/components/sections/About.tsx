@@ -71,9 +71,7 @@ export function About() {
             {bio.description}
           </p>
           <p className="text-foreground-muted leading-relaxed">
-            Currently working at{" "}
-            <span className="text-accent font-medium">PreDrag System LLP</span>{" "}
-            as a Frontend Developer, where I architect scalable React.js and
+            Currently working as a Frontend Developer, where I architect scalable React.js and
             Next.js applications serving thousands of users. I&apos;m passionate
             about performance optimization, clean code, and building tools that
             developers love.
@@ -87,7 +85,15 @@ export function About() {
               className="text-accent-blue hover:underline"
             >
               Dev.to
-            </a>{" "}
+            </a>{" "} and{" "}
+             <a
+              href="https://www.linkedin.com/in/shubhamkhatik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent-blue hover:underline"
+            >
+              LinkedIn
+            </a> {" "}
             covering topics from system design to frontend performance. I
             believe in continuous learning and contributing back to the
             developer community.

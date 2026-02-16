@@ -53,10 +53,7 @@ export function CaseStudies() {
                 className="w-full flex items-center justify-between p-6 md:p-8 text-left"
               >
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium">
-                      Case Study {index + 1}
-                    </span>
+                  <div className="flex items-center gap-3 mb-2">  
                     {study.metrics.slice(0, 2).map((m) => (
                       <span
                         key={m.label}

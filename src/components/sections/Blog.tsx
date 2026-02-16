@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Clock, ExternalLink, Tag, Linkedin, Twitter, ChevronDown, ChevronUp } from "lucide-react";
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
-import { socialHighlights } from "@/constants/social";
+import { SocialHighlight } from "@/constants/social";
 import type { DevToArticle } from "@/lib/devto";
 
 const ARTICLES_PER_PAGE = 6;
@@ -150,60 +150,6 @@ export function Blog({ articles }: BlogProps) {
             Loading articles from Dev.to...
           </div>
         )}
-      </div>
-
-      {/* Social Highlights */}
-      <div>
-        <h3
-          className="text-lg font-semibold text-foreground mb-6 flex items-center gap-2"
-          style={{ fontFamily: "var(--font-outfit)" }}
-        >
-          <span className="w-6 h-6 rounded bg-accent-blue/10 flex items-center justify-center text-accent-blue text-xs font-bold">
-            S
-          </span>
-          Social Highlights
-        </h3>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {socialHighlights.map((highlight, index) => {
-            const PlatformIcon = platformIcons[highlight.platform];
-            return (
-              <motion.a
-                key={highlight.id}
-                href={highlight.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="glass rounded-2xl p-5 glass-hover transition-all duration-300 group"
-              >
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-accent-blue/10 text-accent-blue">
-                    <PlatformIcon size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-sm font-semibold text-foreground group-hover:text-accent-blue transition-colors">
-                      {highlight.title}
-                    </h4>
-                    <span className="text-xs text-foreground-muted">
-                      {highlight.date}
-                    </span>
-                  </div>
-                  {highlight.engagement && (
-                    <span className="px-2 py-0.5 rounded-full bg-accent-blue/10 text-accent-blue text-[10px] font-medium">
-                      {highlight.engagement}
-                    </span>
-                  )}
-                </div>
-                <p className="text-foreground-muted text-sm leading-relaxed">
-                  {highlight.description}
-                </p>
-              </motion.a>
-            );
-          })}
-        </div>
       </div>
     </SectionWrapper>
   );

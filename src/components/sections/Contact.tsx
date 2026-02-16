@@ -121,23 +121,7 @@ export function Contact() {
           ))}
         </motion.div>
 
-        {/* Resume CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <a
-            href={bio.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-accent to-accent-blue text-white font-medium hover:shadow-[0_0_40px_rgba(139,92,246,0.3)] transition-all duration-300 hover:scale-105"
-          >
-            <Download size={16} />
-            Download Resume
-          </a>
-        </motion.div>
+        
       </div>
     </SectionWrapper>
   );
