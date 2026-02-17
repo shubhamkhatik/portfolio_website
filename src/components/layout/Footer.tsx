@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Heart, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Heart } from "lucide-react";
 import { bio } from "@/constants/resume-data";
 
 const socialLinks = [
